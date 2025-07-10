@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  background: transparent;
+}
+.branding {
+  font-size: 20px;
+  color: #fff;
+}
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+}
+.tagline {
+  font-size: 12px;
+  color: #80ffdc;
+  margin-left: 5px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #00ffc3;
+}
+
+.hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.hero-text strong {
+  font-weight: 700;
+}
+.hero-text .highlight {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #ccc;
+}
+.hero-text .highlight span {
+  color: #00ffc3;
+  font-weight: 600;
+}
+.hero-text .subtext {
+  font-size: 14px;
+  margin: 20px 0;
+  color: #ccc;
+}
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: #00ffc3;
+}
+
+.features {
+  padding: 70px 50px;
+  text-align: center;
+  background-color: #fff;
+}
+.features h2 {
+  color: #00cba9;
+  font-size: 26px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.feature-item {
+  max-width: 300px;
+}
+.feature-item i {
+  font-size: 36px;
+  color: #00cba9;
+  margin-bottom: 20px;
+}
+.feature-item h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.feature-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  .features {
+    padding: 40px 20px;
+  }
+}
